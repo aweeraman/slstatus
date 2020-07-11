@@ -67,10 +67,11 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ username,       " [%s", NULL },
 	{ hostname,       "@%s]", NULL },
+	{ ipv4,           " [IP: %s]", "wlo1" },
 	{ kernel_release, " [KERNEL: %s] ", NULL },
 	{ wifi_essid,     " [WIFI: %s] ", "wlo1" },
 	{ load_avg,       " [LOAD: %s] ", NULL },
 	{ cpu_perc,       " [CPU: %3s%%] ", NULL },
 	{ battery_perc,   " [PWR: %3s%%] ", "BAT0" },
-	{ datetime,       " [%s", "%F %T] " },
+	{ datetime,       " [%s", "%b %d %R] " },
 };
