@@ -72,6 +72,7 @@ static const struct arg args[] = {
 	{ wifi_essid,     " [WIFI: %s] ", "wlo1" },
 	{ load_avg,       " [LOAD: %s] ", NULL },
 	{ cpu_perc,       " [CPU: %3s%%] ", NULL },
+	{ cpu_freq,       " [FREQ: %s] ", NULL },
 	{ battery_perc,   " [PWR: %3s%%] ", "BAT0" },
 	{ datetime,       " [%s", "%b %d %R] " },
 };
