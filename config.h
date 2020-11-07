@@ -69,7 +69,7 @@ static const struct arg args[] = {
 	{ kernel_release, " [KERNEL: %s] ", NULL },
 	{ wifi_essid,     " [WIFI: %s] ", "wlo1" },
 	{ load_avg,       " [LOAD: %s] ", NULL },
-	{ temp,           " [TEMP: %s] ", "/sys/class/thermal/thermal_zone4/temp" },
+	{ temp,           " [TEMP: %s] ", "/sys/class/thermal/thermal_zone5/temp" },
 	{ cpu_perc,       " [CPU: %3s%%] ", NULL },
 	{ cpu_freq,       " [FREQ: %s] ", NULL },
 	{ battery_perc,   " [PWR: %3s%%] ", "BAT0" },
