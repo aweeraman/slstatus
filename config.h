@@ -63,15 +63,15 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ username,       " [%s", NULL },
-	{ hostname,       "@%s]", NULL },
-	{ ipv4,           " [IP: %s]", "wlo1" },
-	{ kernel_release, " [KERNEL: %s] ", NULL },
-	{ wifi_essid,     " [WIFI: %s] ", "wlo1" },
-	{ load_avg,       " [LOAD: %s] ", NULL },
-	{ temp,           " [TEMP: %s] ", "/sys/class/thermal/thermal_zone5/temp" },
-	{ cpu_perc,       " [CPU: %3s%%] ", NULL },
-	{ cpu_freq,       " [FREQ: %s] ", NULL },
-	{ battery_perc,   " [PWR: %3s%%] ", "BAT0" },
-	{ datetime,       " [%s", "%b %d %R] " },
+	{ username,       " %s", NULL },
+	{ hostname,       "@%s | ", NULL },
+	{ ipv4,           "%s | ", "wlo1" },
+	{ kernel_release, "%s kernel | ", NULL },
+	{ wifi_essid,     "%s network | ", "wlo1" },
+	{ cpu_perc,       "%s%% cpu | ", NULL },
+	{ load_avg,       "%s load | ", NULL },
+	{ temp,           "%s F | ", "/sys/class/thermal/thermal_zone5/temp" },
+	{ cpu_freq,       "%s freq | ", NULL },
+	{ battery_perc,   "%3s%% battery | ", "BAT0" },
+	{ datetime,       "%s", "%b %d %R " },
 };
